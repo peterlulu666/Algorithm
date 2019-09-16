@@ -9,8 +9,7 @@ public class Main {
     }
 
     public static void selectionSort(int[] numberArray) {
-        int numberLength = numberArray.length;
-        for (int boundaryIndex = 0; boundaryIndex < numberLength - 1; boundaryIndex++) {
+        for (int boundaryIndex = 0; boundaryIndex < numberArray.length - 1; boundaryIndex++) {
 //            find the minimum number of the unsorted array
             int minIdx = minimumIndex(numberArray, boundaryIndex);
 //            swap the minimum number with the boundary number
