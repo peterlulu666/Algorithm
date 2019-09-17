@@ -20,6 +20,7 @@ public class Main {
     }
 
     public static int minimumIndex(int[] numberArray, int boundaryIndex) {
+//        swap the index of found minimum number with the index of assumed minimum number
         int minIndex = boundaryIndex;
         for (int unsortedIndex = boundaryIndex + 1; unsortedIndex < numberArray.length; unsortedIndex++) {
             if (numberArray[minIndex] > numberArray[unsortedIndex]) {
