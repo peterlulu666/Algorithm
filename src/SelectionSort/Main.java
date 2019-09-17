@@ -12,7 +12,7 @@ public class Main {
         for (int boundaryIndex = 0; boundaryIndex < numberArray.length - 1; boundaryIndex++) {
 //            find the minimum number of the unsorted array
             int minIdx = minimumIndex(numberArray, boundaryIndex);
-//            swap the minimum number with the boundary number
+//            swap the index of minimum number with the index of boundary number
             swap(numberArray, minIdx, boundaryIndex);
 
         }
