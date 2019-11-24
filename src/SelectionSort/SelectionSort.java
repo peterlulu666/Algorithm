@@ -1,6 +1,6 @@
 package SelectionSort;
 
-public class SelectionSortJava {
+public class SelectionSort {
     public static void main(String[] args) {
         int[] numberArray = {2, 7, 4, 1, 5, 3};
         selectionSort(numberArray);
