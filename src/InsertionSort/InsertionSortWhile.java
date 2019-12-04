@@ -4,18 +4,18 @@ import java.util.Arrays;
 
 public class InsertionSortWhile {
     public static void insertionSort(int[] arr) {
-        for (int i = 1; i < arr.length; ++i) {
-            int key = arr[i];
-            int j = i - 1;
+        for (int boundaryIndex = 1; boundaryIndex < arr.length; ++boundaryIndex) {
+            int key = arr[boundaryIndex];
+            int mover = boundaryIndex - 1;
 
             /* Move elements of arr[0..i-1], that are
                greater than key, to one position ahead
                of their current position */
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
-                j = j - 1;
+            while (mover >= 0 && arr[mover] > key) {
+                arr[mover + 1] = arr[mover];
+                mover = mover - 1;
             }
-            arr[j + 1] = key;
+            arr[mover + 1] = key;
         }
     }
 
